@@ -15,8 +15,6 @@ app.get('/', (req, res) => {
 app.post('/login', (req, res) => {
     const { username, password } = req.body;
     
-    console.log(req.body)
-    
     if (username === 'admin' && password === 'admin') {
         res.send({})
     } else {
